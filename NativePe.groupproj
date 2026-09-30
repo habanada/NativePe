@@ -1,0 +1,276 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{1CDF9566-D507-5ABC-9F4F-726D5A1B4AEB}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="demo\NativePeDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\TestDirectoryEntry.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\TestExportsMapperForwarders.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\TestExportsMapperForwarderFixture.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\TestFixDotNet.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\TestFormatDetect.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\TestFoundBase.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\TestHookingLocal.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\TestIsBadReadPointer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\TestIsWantedModule.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\TestLde.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\TestLoading.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\TestMalformedPe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\TestPebLookup.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\TestThreadSafeHooks.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\dunitx\NativePeDUnitX.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\corpus\NativePeCorpusTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tools\ProcessDump\NativePeProcessDump.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\realworld\target\NativePeProcessDumpTarget.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\realworld\runner\NativePeRealWorldRunner.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tests\realworld\fixture\NativePeRealWorldFixture.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="NativePeDemo">
+        <MSBuild Projects="demo\NativePeDemo.dproj"/>
+    </Target>
+    <Target Name="NativePeDemo:Clean">
+        <MSBuild Projects="demo\NativePeDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NativePeDemo:Make">
+        <MSBuild Projects="demo\NativePeDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestDirectoryEntry">
+        <MSBuild Projects="tests\TestDirectoryEntry.dproj"/>
+    </Target>
+    <Target Name="TestDirectoryEntry:Clean">
+        <MSBuild Projects="tests\TestDirectoryEntry.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestDirectoryEntry:Make">
+        <MSBuild Projects="tests\TestDirectoryEntry.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestExportsMapperForwarders">
+        <MSBuild Projects="tests\TestExportsMapperForwarders.dproj"/>
+    </Target>
+    <Target Name="TestExportsMapperForwarders:Clean">
+        <MSBuild Projects="tests\TestExportsMapperForwarders.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestExportsMapperForwarders:Make">
+        <MSBuild Projects="tests\TestExportsMapperForwarders.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestExportsMapperForwarderFixture">
+        <MSBuild Projects="tests\TestExportsMapperForwarderFixture.dproj"/>
+    </Target>
+    <Target Name="TestExportsMapperForwarderFixture:Clean">
+        <MSBuild Projects="tests\TestExportsMapperForwarderFixture.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestExportsMapperForwarderFixture:Make">
+        <MSBuild Projects="tests\TestExportsMapperForwarderFixture.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestFixDotNet">
+        <MSBuild Projects="tests\TestFixDotNet.dproj"/>
+    </Target>
+    <Target Name="TestFixDotNet:Clean">
+        <MSBuild Projects="tests\TestFixDotNet.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestFixDotNet:Make">
+        <MSBuild Projects="tests\TestFixDotNet.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestFormatDetect">
+        <MSBuild Projects="tests\TestFormatDetect.dproj"/>
+    </Target>
+    <Target Name="TestFormatDetect:Clean">
+        <MSBuild Projects="tests\TestFormatDetect.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestFormatDetect:Make">
+        <MSBuild Projects="tests\TestFormatDetect.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestFoundBase">
+        <MSBuild Projects="tests\TestFoundBase.dproj"/>
+    </Target>
+    <Target Name="TestFoundBase:Clean">
+        <MSBuild Projects="tests\TestFoundBase.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestFoundBase:Make">
+        <MSBuild Projects="tests\TestFoundBase.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestHookingLocal">
+        <MSBuild Projects="tests\TestHookingLocal.dproj"/>
+    </Target>
+    <Target Name="TestHookingLocal:Clean">
+        <MSBuild Projects="tests\TestHookingLocal.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestHookingLocal:Make">
+        <MSBuild Projects="tests\TestHookingLocal.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestIsBadReadPointer">
+        <MSBuild Projects="tests\TestIsBadReadPointer.dproj"/>
+    </Target>
+    <Target Name="TestIsBadReadPointer:Clean">
+        <MSBuild Projects="tests\TestIsBadReadPointer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestIsBadReadPointer:Make">
+        <MSBuild Projects="tests\TestIsBadReadPointer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestIsWantedModule">
+        <MSBuild Projects="tests\TestIsWantedModule.dproj"/>
+    </Target>
+    <Target Name="TestIsWantedModule:Clean">
+        <MSBuild Projects="tests\TestIsWantedModule.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestIsWantedModule:Make">
+        <MSBuild Projects="tests\TestIsWantedModule.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestLde">
+        <MSBuild Projects="tests\TestLde.dproj"/>
+    </Target>
+    <Target Name="TestLde:Clean">
+        <MSBuild Projects="tests\TestLde.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestLde:Make">
+        <MSBuild Projects="tests\TestLde.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestLoading">
+        <MSBuild Projects="tests\TestLoading.dproj"/>
+    </Target>
+    <Target Name="TestLoading:Clean">
+        <MSBuild Projects="tests\TestLoading.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestLoading:Make">
+        <MSBuild Projects="tests\TestLoading.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestMalformedPe">
+        <MSBuild Projects="tests\TestMalformedPe.dproj"/>
+    </Target>
+    <Target Name="TestMalformedPe:Clean">
+        <MSBuild Projects="tests\TestMalformedPe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestMalformedPe:Make">
+        <MSBuild Projects="tests\TestMalformedPe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestPebLookup">
+        <MSBuild Projects="tests\TestPebLookup.dproj"/>
+    </Target>
+    <Target Name="TestPebLookup:Clean">
+        <MSBuild Projects="tests\TestPebLookup.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestPebLookup:Make">
+        <MSBuild Projects="tests\TestPebLookup.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestThreadSafeHooks">
+        <MSBuild Projects="tests\TestThreadSafeHooks.dproj"/>
+    </Target>
+    <Target Name="TestThreadSafeHooks:Clean">
+        <MSBuild Projects="tests\TestThreadSafeHooks.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestThreadSafeHooks:Make">
+        <MSBuild Projects="tests\TestThreadSafeHooks.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NativePeDUnitX">
+        <MSBuild Projects="tests\dunitx\NativePeDUnitX.dproj"/>
+    </Target>
+    <Target Name="NativePeDUnitX:Clean">
+        <MSBuild Projects="tests\dunitx\NativePeDUnitX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NativePeDUnitX:Make">
+        <MSBuild Projects="tests\dunitx\NativePeDUnitX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NativePeCorpusTest">
+        <MSBuild Projects="tests\corpus\NativePeCorpusTest.dproj"/>
+    </Target>
+    <Target Name="NativePeCorpusTest:Clean">
+        <MSBuild Projects="tests\corpus\NativePeCorpusTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NativePeCorpusTest:Make">
+        <MSBuild Projects="tests\corpus\NativePeCorpusTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NativePeProcessDump">
+        <MSBuild Projects="tools\ProcessDump\NativePeProcessDump.dproj"/>
+    </Target>
+    <Target Name="NativePeProcessDump:Clean">
+        <MSBuild Projects="tools\ProcessDump\NativePeProcessDump.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NativePeProcessDump:Make">
+        <MSBuild Projects="tools\ProcessDump\NativePeProcessDump.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NativePeProcessDumpTarget">
+        <MSBuild Projects="tests\realworld\target\NativePeProcessDumpTarget.dproj"/>
+    </Target>
+    <Target Name="NativePeProcessDumpTarget:Clean">
+        <MSBuild Projects="tests\realworld\target\NativePeProcessDumpTarget.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NativePeProcessDumpTarget:Make">
+        <MSBuild Projects="tests\realworld\target\NativePeProcessDumpTarget.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NativePeRealWorldRunner">
+        <MSBuild Projects="tests\realworld\runner\NativePeRealWorldRunner.dproj"/>
+    </Target>
+    <Target Name="NativePeRealWorldRunner:Clean">
+        <MSBuild Projects="tests\realworld\runner\NativePeRealWorldRunner.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NativePeRealWorldRunner:Make">
+        <MSBuild Projects="tests\realworld\runner\NativePeRealWorldRunner.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NativePeRealWorldFixture">
+        <MSBuild Projects="tests\realworld\fixture\NativePeRealWorldFixture.dproj"/>
+    </Target>
+    <Target Name="NativePeRealWorldFixture:Clean">
+        <MSBuild Projects="tests\realworld\fixture\NativePeRealWorldFixture.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NativePeRealWorldFixture:Make">
+        <MSBuild Projects="tests\realworld\fixture\NativePeRealWorldFixture.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="NativePeDemo;TestDirectoryEntry;TestExportsMapperForwarders;TestExportsMapperForwarderFixture;TestFixDotNet;TestFormatDetect;TestFoundBase;TestHookingLocal;TestIsBadReadPointer;TestIsWantedModule;TestLde;TestLoading;TestMalformedPe;TestPebLookup;TestThreadSafeHooks;NativePeDUnitX;NativePeCorpusTest;NativePeProcessDump;NativePeProcessDumpTarget;NativePeRealWorldRunner;NativePeRealWorldFixture"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="NativePeDemo:Clean;TestDirectoryEntry:Clean;TestExportsMapperForwarders:Clean;TestExportsMapperForwarderFixture:Clean;TestFixDotNet:Clean;TestFormatDetect:Clean;TestFoundBase:Clean;TestHookingLocal:Clean;TestIsBadReadPointer:Clean;TestIsWantedModule:Clean;TestLde:Clean;TestLoading:Clean;TestMalformedPe:Clean;TestPebLookup:Clean;TestThreadSafeHooks:Clean;NativePeDUnitX:Clean;NativePeCorpusTest:Clean;NativePeProcessDump:Clean;NativePeProcessDumpTarget:Clean;NativePeRealWorldRunner:Clean;NativePeRealWorldFixture:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="NativePeDemo:Make;TestDirectoryEntry:Make;TestExportsMapperForwarders:Make;TestExportsMapperForwarderFixture:Make;TestFixDotNet:Make;TestFormatDetect:Make;TestFoundBase:Make;TestHookingLocal:Make;TestIsBadReadPointer:Make;TestIsWantedModule:Make;TestLde:Make;TestLoading:Make;TestMalformedPe:Make;TestPebLookup:Make;TestThreadSafeHooks:Make;NativePeDUnitX:Make;NativePeCorpusTest:Make;NativePeProcessDump:Make;NativePeProcessDumpTarget:Make;NativePeRealWorldRunner:Make;NativePeRealWorldFixture:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,23 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D1C21615-4D6F-4CFB-A839-DAB61B3CB104}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="fixture\NativePeRealWorldFixture.dproj"><Dependencies/></Projects>
+        <Projects Include="target\NativePeProcessDumpTarget.dproj"><Dependencies/></Projects>
+        <Projects Include="runner\NativePeRealWorldRunner.dproj"><Dependencies/></Projects>
+        <Projects Include="..\..\tools\ProcessDump\NativePeProcessDump.dproj"><Dependencies/></Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject><Default.Personality/></BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Build">
+        <MSBuild Projects="fixture\NativePeRealWorldFixture.dproj;target\NativePeProcessDumpTarget.dproj;runner\NativePeRealWorldRunner.dproj;..\..\tools\ProcessDump\NativePeProcessDump.dproj"/>
+    </Target>
+    <Target Name="Clean">
+        <MSBuild Projects="fixture\NativePeRealWorldFixture.dproj;target\NativePeProcessDumpTarget.dproj;runner\NativePeRealWorldRunner.dproj;..\..\tools\ProcessDump\NativePeProcessDump.dproj" Targets="Clean"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
